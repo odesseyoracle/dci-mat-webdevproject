@@ -1,0 +1,334 @@
+body {
+    background-color: dodgerblue;
+    padding: none;
+    margin: 0;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0;
+    padding: 0px;
+
+    /* border: 2px solid black; */
+
+    height: 62px;
+
+
+}
+.welcomePage {
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 700px;
+    height: 700px;
+
+    background-image: url(bilder/cityview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    position: relative;
+}
+
+.welcomePage button {
+    background-color: rgba(30, 143, 255, 0.864);
+    border-color: rgb(30, 143, 255);
+    
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+
+.welcomePage a {
+    font-size: xxx-large;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.audioPlayer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    background: none;
+    
+    opacity: 0.75;
+}
+
+
+h1 {
+    color: white;
+    font-size: xxx-large;
+    font-weight: 300;
+
+
+    margin: 0;
+}
+
+h3{
+    color: white;
+    font-weight: 300;
+    margin-top: 0px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-weight: 300;
+    margin-top: 0px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    font-weight: 300;
+    margin-top: 0px;
+    font-size: large;
+    text-align: center;
+}
+
+header a {
+    margin: 0;
+
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+main {
+
+    background-color: rgb(22, 82, 142);
+    justify-content: space-around;
+    align-items: center;
+
+    padding-bottom: 20px;
+
+    min-width: fit-content;
+    
+
+}
+
+
+.none {
+    display: none;
+}
+
+
+
+#menuIcon img:hover {
+    background-color: #55ACEE;
+}
+
+.ausklappMenu {
+    position: absolute;
+
+    background-color: #55aceec2;
+    padding: 15px;
+        
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    
+}
+
+.ausklappMenu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+
+}
+
+.ausklappMenu a{
+    color: white;
+    font-size: large;
+}
+
+
+
+.titelBild {
+    height: auto;
+    max-width: 100%;
+    /* box-shadow: rgb(255, 255, 255) 0px 5px 15px; */
+    margin-bottom: 40px;
+}
+
+.introText {
+    text-align: center;
+
+    margin: auto 20px;
+}
+
+.bigBox {
+    margin: 100px auto;
+    padding: 15px;
+
+    justify-content: center;
+
+    min-width: min-content;
+
+    /* box-shadow: rgb(255, 255, 255) 0px 5px 15px; */
+
+    /* background-color: dodgerblue; */
+}
+
+.dreierBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* width: 600px; */
+    max-width: 1000px;
+
+    margin: 15px auto;
+    padding: 10px 50px;
+    gap: 20px;
+
+    background-color: #55acee7a;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.artikelFoto {
+    width: 600px;
+    height: 300px;
+    
+    
+}
+
+.artikelText {
+    width: 350px;
+    text-align: justify;
+}
+
+.kleineBox {
+    width: 300px;
+    padding: 10px;
+
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    
+}
+
+.kleineBox img {
+    width: 200px;
+    height: 200px;
+    
+}
+.kleineBox img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+ iframe {
+    width: 50%;
+ }
+
+
+.animierteKarte {
+    width: 600px;
+    height: 600px;
+
+    margin: auto;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    display: flex;
+    justify-content: center;
+
+
+    animation-name: karte;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+    background-image: url(bilder/usaMap.jpg);
+    background-size: cover;
+}
+
+@keyframes karte {
+    0% { background-image: url(bilder/usaMap.jpg);}
+    25% {background-image: url(bilder/oregonMap.webp);}
+    50% {background-image: url(bilder/portlandonmap.jpg);}
+    100% {background-image: url(bilder/portlanszones.webp);}
+}
+
+.googleMap {
+
+    width: 100%
+    
+
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footerList {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footerList a {
+    color: white;
+
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+}
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+}
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+}
+
